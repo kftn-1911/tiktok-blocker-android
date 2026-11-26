@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Placeholder app that takes TikTok's package name so the real TikTok
+  cannot be installed while it is present. No code, no permissions,
+  no launcher icon. The label is deliberately dull so it is easy to overlook.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhiliaoapp.musically">
+    <application
+        android:label="Sys Cfg Cache"
+        android:hasCode="false"
+        android:allowBackup="false" />
+</manifest>
