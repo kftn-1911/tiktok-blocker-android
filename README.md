@@ -21,21 +21,30 @@ The placeholder:
 - uses a dull name, **"Sys Cfg Cache"**, so it's easy to overlook in Settings → Apps
 - has version `99.0` / versionCode `2100000000`, so nothing can "update" over it
 
-## Requirements
+## Quick install (no PC needed)
+
+1. **Uninstall TikTok** from your phone first. The blocker can't install while TikTok is there.
+2. Download **`tiktok-blocker.apk`** from the [latest release](https://github.com/kftn-1911/tiktok-blocker-android/releases/latest) and tap it.
+3. Allow "Install unknown apps" for your browser or file manager when Android asks.
+4. If Play Protect warns about an unknown app, tap **More details → Install anyway**. A notice that the app was "built for an older version of Android" is expected and harmless.
+
+Then try installing TikTok from the Play Store: it should fail.
+
+## Build it yourself
+
+### Requirements
 
 - Windows PC with PowerShell
 - [Android SDK](https://developer.android.com/studio) (build-tools and one platform), e.g. installed by Android Studio
 - Python 3 with `cryptography` (`pip install cryptography`). Java is **not** needed.
 - `adb` and a phone with **USB debugging** enabled
 
-## Usage
+### Usage
 
 ```powershell
 .\build.ps1      # builds build\blocker.apk
 .\install.ps1    # removes TikTok from the connected phone and installs the placeholder
 ```
-
-Then try installing TikTok from the Play Store: it should fail.
 
 ## Files
 
